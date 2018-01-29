@@ -1,5 +1,5 @@
 /* Copyright © 2018. Jose Andrade. All Rights Reserved. */
-/* Last Modified On: 01-29-2018 */
+/* Last Modified On: 01-15-2018 */
 
 @font-face {
   font-family: "Caviar Dreams";
@@ -913,7 +913,7 @@ footer .footer-below {
 /******************** STAGE 1 ********************/
 @media (max-width:768px) {
 	.navbar img {
-		max-width:250px;
+		max-width:245px;
 		padding-left:25px;
 		align:center;
 	}
@@ -943,7 +943,7 @@ footer .footer-below {
 	}
 	
 	#fade-footer img {
-		max-width:295px; 
+		max-width:275px; 
 		margin-top:25px;
 		margin-bottom:50px;
 	}
@@ -951,7 +951,7 @@ footer .footer-below {
 	
 	footer .footer-below p {
 		text-align:center;
-		font-size:12px;
+		font-size:10px;
 		margin-bottom:25px;
 	}
 	.pull-right {
@@ -992,8 +992,8 @@ footer .footer-below {
 		font-size:30px;
 		padding-left:15px;
 		line-height:60px;
-		margin-left:10px;
-		margin-right:10px;
+		margin-left:0px;
+		margin-right:0px;
 	}
 	
 	.navbar-default .nav li a {
@@ -1032,8 +1032,8 @@ ul.social-buttons li a {
 	height:40px;
 	width:40px;
 	border-radius:100%;
-	font-size:20px;l
-	ine-height:40px;
+	font-size:20px;
+	line-height:40px;
 	color:#fff;
 	outline:0;
 	-webkit-transition:all .3s;
