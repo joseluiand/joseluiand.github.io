@@ -53,6 +53,14 @@ p.large {
 	font-size:18px;
 }
 
+a.landing {
+	color:#20C20E;
+}
+
+a.landing:hover {
+	color:#fff;
+}
+
 hr.style-one {
     border: 0;
     height: 5px;
@@ -132,6 +140,11 @@ h6 {
 	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
+}
+
+section h2.section-heading-445 {
+	margin-top:50px;
+	margin-bottom:30px;
 }
 	
 .img-centered {
@@ -413,55 +426,57 @@ fieldset[disabled] .btn-xl.active {
 	background-color:#fff;
 }
 
-.btn-xl-about {
-	color:#fff;
-	background-color:#6dabe4;
-	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+.btn-xl-landing {
+	color:#000;
+	background-color:#20C20E;
+	font-family:'Source Code Pro', monospace;
 	text-transform:uppercase;
-	font-weight:400;
+	font-weight:700;
 	border-radius:5px;
 	font-size:20px;
 	padding:20px 40px;
+	align:left;
 	-webkit-transition:.3s;
 	-moz-transition:.3s;
 	transition:.3s;
+	animation: fadein 4s;
 }
 
-.btn-xl-about:hover,
-.btn-xl-about:focus,
-.btn-xl-about:active,
-.btn-xl-about.active,
-.open .dropdown-toggle.btn-xl-about {
+.btn-xl-landing:hover,
+.btn-xl-landing:focus,
+.btn-xl-landing:active,
+.btn-xl-landing.active,
+.open .dropdown-toggle.btn-xl-landing {
 	color:#fff;
 	background-color:#00ccff;
 }
 
-.btn-xl-about:active,
-.btn-xl-about.active,
-.open .dropdown-toggle.btn-xl-about {
+.btn-xl-landing:active,
+.btn-xl-landing.active,
+.open .dropdown-toggle.btn-xl-landing {
 	background-image:none;
 }
 
-.btn-xl-about.disabled,
-.btn-xl-about[disabled],
-fieldset[disabled] .btn-xl-about,
-.btn-xl-about.disabled:hover,
-.btn-xl-about[disabled]:hover,
-fieldset[disabled] .btn-xl-about:hover,
-.btn-xl-about.disabled:focus,
-.btn-xl-about[disabled]:focus,
-fieldset[disabled] .btn-xl-about:focus,
-.btn-xl-about.disabled:active,
-.btn-xl-about[disabled]:active,
-fieldset[disabled] .btn-xl-about:active,
-.btn-xl-about.disabled.active,
-.btn-xl-about[disabled].active,
-fieldset[disabled] .btn-xl-about.active {
+.btn-xl-landing.disabled,
+.btn-xl-landing[disabled],
+fieldset[disabled] .btn-xl-landing,
+.btn-xl-landing.disabled:hover,
+.btn-xl-landing[disabled]:hover,
+fieldset[disabled] .btn-xl-landing:hover,
+.btn-xl-landing.disabled:focus,
+.btn-xl-landing[disabled]:focus,
+fieldset[disabled] .btn-xl-landing:focus,
+.btn-xl-landing.disabled:active,
+.btn-xl-landing[disabled]:active,
+fieldset[disabled] .btn-xl-landing:active,
+.btn-xl-landing.disabled.active,
+.btn-xl-landing[disabled].active,
+fieldset[disabled] .btn-xl-landing.active {
 	background-color:#224466;
 	border-color:#224466;
 }
 
-.btn-xl-about .badge {
+.btn-xl-landing .badge {
 	color:#224466;
 	background-color:#fff;
 }
@@ -603,6 +618,11 @@ blink{
 /********** SECTIONS **********/
 section {
 	padding:100px 0;
+}
+
+section#about{
+	padding-top:50px;
+	padding-bottom:43px;
 }
 
 section h1.section-heading {
@@ -1149,8 +1169,7 @@ div.invis img {
 
 /********** ABOUT.HTML **********/
 .bg-about {
-	background-color:#555;
-	background-image:url("../img/book.jpg");
+	background-color:#e7ded0;
 	background-size:auto 1100px;
 }
 
@@ -1180,20 +1199,20 @@ p.testimonials {
 
 .about {
 	text-align:center;
-	margin-bottom:50px;
 }
 
 .about img {
-	margin:0 auto;
+	margin-top:30px;
 	border:0px solid #fff;
-	max-width:80%;
+	max-width:70%;
+	border-radius: 50%;
 }
 
 /********** POPULAR.HTML **********/
 .bg-popular {
 	background-color:#f2f2f2;
-	background-image:url("../img/bg_popular.jpg");
-	background-size:auto 100% ;
+	background-image:url("../img/main_bg.jpg");
+	background-repeat: repeat-x repeat-y;
 }
 
 .btn-xl-course {
@@ -1250,21 +1269,10 @@ p.testimonials {
 #popular .popular-item .popular-link .popular-hover .popular-hover-content {
 	position:absolute;
 	width:100%;
-	height:20px;
 	font-size:20px;
 	text-align:center;
-	top:30%;
-	margin-top:-12px;
+	top:35%;
 	color:#fff;
-}
-
-#popular .popular-item .popular-link .popular-hover .popular-hover-content i {
-	margin-top:-12px;
-}
-
-#popular .popular-item .popular-link .popular-hover .popular-hover-content h3,
-#popular .popular-item .popular-link .popular-hover .popular-hover-content h4 {
-	margin:0;
 }
 
 #popular .popular-item .popular-caption {
@@ -1439,7 +1447,6 @@ p.contact {
 section h2.section-heading-contact {
 	font-size:50px;
 	margin-top:0;
-	margin-bottom:15px;
 }
 
 section#contact {
