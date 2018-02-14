@@ -119,6 +119,14 @@ a {
 	-moz-transition:all .3s;
 	transition:all .3s;
 }
+
+a.csce {
+	color:#333;
+	text-transform:uppercase;
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	transition:all .3s;
+}
 	
 a:hover,
 a:focus,
@@ -301,11 +309,11 @@ section h2.section-heading-445 {
 
 /********** BUTTONS **********/
 .btn-outline {
-    margin-top: 5px;
-    border: solid 2px #009900;
+    margin-top: 0px;
+    border: solid 20px #224466;
     font-size: 20px;
     color: #fff;
-    background: #009900;
+    background: #224466;
     transition: all .3s ease-in-out;
 }
 
@@ -313,8 +321,8 @@ section h2.section-heading-445 {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #fff;
-    color: #009900;
+    border: solid 20px #fff;
+    color: #224466;
     background: #fff;
 }
 
