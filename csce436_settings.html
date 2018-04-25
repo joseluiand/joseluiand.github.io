@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Copyright © 2017. Jose Andrade. All Rights Reserved. -->
+<!-- Last Commit On: 01-15-2018 -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content=" Jose Andrade">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>SUPERHOT | Settings</title>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+	
+	<!-- Bootstrap v4.0 -->
+	<!-- <link rel="stylesheet" 
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
+		integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" 
+		crossorigin="anonymous"> -->	
+		
+	<!-- Font Awesome 5.0.4 -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+		
+	<!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/andrade.css" rel="stylesheet">
+	
+	<style>
+	body {
+	background-color:#000;
+	}
+	
+	h1 {
+		margin-top:-25px;
+		margin-bottom:40px;
+		color: white;
+		font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		text-transform:uppercase;
+		font-weight:400;
+		font-size:75px;
+		padding-bottom:25px;
+		border-bottom: 5px solid white;
+	}
+	
+	p {
+	color: red;
+	}
+	
+	.btn-primary {
+	color:#fff;
+	font-size:40px;
+	background-color:#ce1502;
+	border-color:#ce1502;
+	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform:uppercase;
+	font-weight:400;
+	padding:25px 50px;
+	margin-top:625px;
+	margin-left:1100px;
+	border-radius: 100px;
+}
+
+	.btn-primary:hover,
+	.btn-primary:focus,
+	.btn-primary:active,
+	.btn-primary.active,
+	.open .dropdown-toggle.btn-primary {
+		color:#ce1502;
+		background-color:#fff;
+		border-color:#fff;
+	}
+	
+	.btn-primary2 {
+	color:#fff;
+	font-size:40px;
+	background-color:#ce1502;
+	border-color:#ce1502;
+	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform:uppercase;
+	font-weight:400;
+	padding:25px 50px;
+	margin-top:40px;
+	margin-left:1135px;
+	border-radius: 100px;
+}
+
+	.btn-primary2:hover,
+	.btn-primary2:focus,
+	.btn-primary2:active,
+	.btn-primary2.active,
+	.open .dropdown-toggle.btn-primary {
+		color:#ce1502;
+		background-color:#fff;
+		border-color:#fff;
+	}
+	
+	.btn-primary3 {
+	color:#fff;
+	margin-top:75px;
+	font-size:30px;
+	background-color:#2196F3;
+	border-color:#2196F3;
+	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform:uppercase;
+	font-weight:400;
+	padding:25px 50px;
+	border-radius: 100px;
+}
+
+	.btn-primary3:hover,
+	.btn-primary3:focus,
+	.btn-primary3:active,
+	.btn-primary3.active,
+	.open .dropdown-toggle.btn-primary {
+		color:#2196F3;
+		background-color:#fff;
+		border-color:#fff;
+	}
+	
+	.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+table {
+    text-align: left;
+    color: white;
+	font-size:30px;
+	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform:uppercase;
+}
+
+.slide2container {
+    width: 100%;
+}
+
+.slider2 {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider2:hover {
+    opacity: 1;
+}
+
+.slider2::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #2196F3;
+    cursor: pointer;
+}
+
+.slider2::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #2196F3
+    cursor: pointer;
+}
+
+	.btn-primary4 {
+	color:#fff;
+	margin-top:10px;
+	margin-left:0px;
+	font-size:30px;
+	background-color:#000;
+	border-color:#000;
+	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform:uppercase;
+	font-weight:400;
+	padding:25px 50px;
+	border-radius: 100px;
+}
+
+	.btn-primary4:hover,
+	.btn-primary4:focus,
+	.btn-primary4:active,
+	.btn-primary4.active,
+	.open .dropdown-toggle.btn-primary {
+		color:#ce1502;
+	}
+
+	</style>
+
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <!-- Droid Serif -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"> <!-- Montserrat -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'> <!-- Open Sans -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'> <!-- Roboto Slab -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"> <!-- Source Code Pro -->
+</head>
+
+<body>
+	<a href="csce436.html"><button type="button" class="btn btn-primary4 btn-lg">< Back</button></a>
+		<!-- Landing Page -->
+	<header style="height: 936px;">
+		<div class="container">
+			<h1>SETTINGS</h1>
+			<center>
+			<table id="customers" style="text-align: left;">
+
+
+  
+  <tr>
+    <td>Difficulty</td>
+    <td align="right">
+		<input type="range" min="1" max="100" value="50" class="slider2" id="myRange">
+	</td>
+  </tr>
+  
+   <tr>
+    <td>Video Quality</td>
+    <td align="right">
+		<input type="range" min="1" max="100" value="70" class="slider2" id="myRange">
+	</td>
+  </tr>
+  
+   <tr>
+    <td>Music Volume</td>
+    <td align="right">
+		<input type="range" min="1" max="100" value="65" class="slider2" id="myRange">
+	</td>
+  </tr>
+  
+    <tr>
+    <td><div style="width:500px">Music</div></td>
+    <td align="right"><div style="width:600px">
+		<label class="switch">
+			<input type="checkbox">
+			<span class="slider round"></span>
+		</label></div>
+	</td>
+  </tr>
+  
+  <tr>
+    <td>SFX Volume</td>
+    <td align="right">
+		<input type="range" min="1" max="100" value="70" class="slider2" id="myRange">
+	</td>
+  </tr>
+  
+      <tr>
+    <td><div style="width:500px">SFX</div></td>
+    <td align="right"><div style="width:600px">
+		<label class="switch">
+			<input type="checkbox">
+			<span class="slider round"></span>
+		</label></div>
+	</td>
+  </tr>
+  
+    <tr>
+    <td><div style="width:500px">Bloom Effects</div></td>
+    <td align="right"><div style="width:600px">
+		<label class="switch">
+			<input type="checkbox">
+			<span class="slider round"></span>
+		</label></div>
+	</td>
+  </tr>
+  
+    <tr>
+    <td><div style="width:500px">Particle Effects</div></td>
+    <td align="right"><div style="width:600px">
+		<label class="switch">
+			<input type="checkbox">
+			<span class="slider round"></span>
+		</label></div>
+	</td>
+  </tr>
+  
+    <tr>
+    <td><div style="width:500px">Tutorial</div></td>
+    <td align="right"><div style="width:600px">
+		<label class="switch">
+			<input type="checkbox">
+			<span class="slider round"></span>
+		</label></div>
+	</td>
+  </tr>
+  
+   <tr>
+    <td><div style="width:500px">Accessibility Mode</div></td>
+    <td align="right"><div style="width:600px">
+		<label class="switch">
+			<input type="checkbox">
+			<a href="csce436_help.html"><span class="slider round"></span></a>
+		</label></div>
+	</td>
+  </tr>
+</table>
+
+<a href="csce436_settings.html"><button type="button" class="btn btn-primary3 btn-lg">Apply</button></a>
+
+	</center>		
+
+		</div>
+	</header>
+	<!-- /Landing Page -->
+
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+	<script>
+	$(function() {
+		$('body').removeClass('fade-out');
+	});
+	</script>
+	<script>document.body.className += ' fade-out';</script>
+	<!-- /jQuery -->
+
+    <!-- JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip(); 
+	});
+	</script>
+	<!-- /JavaScript -->
+
+	<!-- Other Scripts -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+	crossorigin="anonymous"> // jQuery
+	</script>
+	<script src=	"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" 
+	integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" 
+	crossorigin="anonymous"> // Popper.js
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" 
+	integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" 
+	crossorigin="anonymous"> // Bootstrap JS
+	</script>
+	<!-- /Other Scripts -->
+</body>
+</html>
