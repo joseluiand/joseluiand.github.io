@@ -309,7 +309,6 @@ section h2.section-heading-445 {
 
 /********** BUTTONS **********/
 .btn-outline {
-    margin-top: 0px;
     border: solid 20px #224466;
     font-size: 20px;
     color: #fff;
@@ -321,7 +320,7 @@ section h2.section-heading-445 {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 20px #fff;
+    border: solid 2px #fff;
     color: #224466;
     background: #fff;
 }
